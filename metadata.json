@@ -1,0 +1,15 @@
+{
+  "name": "geoffwilliams/r_role",
+  "version": "0.1.0",
+  "author": "geoffwilliams",
+  "summary": "ready roles",
+  "license": "Apache-2.0",
+  "source": "https://github.com/GeoffWilliams/r_role",
+  "project_page": "https://github.com/GeoffWilliams/r_role",
+  "issues_url": "https://github.com/GeoffWilliams/r_role/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+
