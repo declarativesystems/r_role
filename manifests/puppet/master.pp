@@ -4,6 +4,6 @@ class r_role::puppet::master {
   include r_profile::puppet::master::agent_installers
   include r_profile::puppet::master::hiera
   include r_profile::puppet::master::git_server
-  include r_profile::puppet::master::auto_sign
+  include r_profile::puppet::master::autosign
 
 }
