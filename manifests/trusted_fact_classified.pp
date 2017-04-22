@@ -1,3 +1,6 @@
+# R_role::trusted_fact_classified
+#
+# Classify a system based on the presence of the trusted fact `pp_role`
 class r_role::trusted_fact_classified {
   # always include our base SOE if no role is specified.  Don't just
   # randomly always include profiles::base as this could have unwanted
