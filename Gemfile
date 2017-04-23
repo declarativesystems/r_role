@@ -12,4 +12,6 @@ gem 'rspec-puppet-facts', '1.7.0'
 gem 'puppet-strings',
   :git => 'https://github.com/declarativesystems/puppet-strings',
   :ref => 'no_dates'
-gem 'pdqtest', '0.3.1'
+gem 'pdqtest', '0.3.4'
+gem 'puppetclassify', '0.1.5'
+gem 'ruby-puppetdb', '2.3.0'
