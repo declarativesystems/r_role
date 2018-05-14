@@ -8,8 +8,10 @@ import errno
 parser = argparse.ArgumentParser()
 
 parser.add_argument("-e", "--export-to", help="name of module to extract to", default="role")
+parser.add_argument("-p", "--profile", help="name of the profile module that role classes use", default="profile")
 parser.add_argument("-x", "--extract", help="path to file to extract", required=True)
 parser.add_argument("-d", "--directory", help="*module* dir to write classes to, eg ~/puppet-control/site/profile")
+
 
 args = vars(parser.parse_args())
 
@@ -18,8 +20,9 @@ if os.path.isfile(extract):
   orig = open(extract, "r").read()
 
   # Transforms
-  extracted = re.sub("r_profile", args["export_to"], orig)
-  extracted = re.sub("R_profile", args["export_to"].capitalize(), extracted)
+  extracted = re.sub("r_role", args["export_to"], orig)
+  extracted = re.sub("R_role", args["export_to"].capitalize(), extracted)
+  extracted = re.sub("r_profile", args["profile"], extracted)
 
   if args["directory"]:
     # extract to the same file in target since only differ by module name
