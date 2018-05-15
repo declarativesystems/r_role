@@ -13,6 +13,6 @@ class r_role::puppet::master {
   include r_role::puppet::master_minimal
 
   include r_profile::puppet::master::agent_installers
-  include r_profile::puppet::master::hiera5
   include r_profile::puppet::master::autosign
+  include r_profile::puppet::master::hiera_eyaml
 }
