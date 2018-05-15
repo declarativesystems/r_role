@@ -6,7 +6,9 @@ class r_role::puppet::master {
 
   # nasty hack..
   class { "r_profile::puppet::master::forge_workaround":
-    'baseurl' => 'https://forgeapi.puppetlabs.com'
+    forge_settings => {
+      'baseurl' => 'https://forgeapi.puppetlabs.com',
+    }
   }
   include r_role::puppet::master_minimal
 
