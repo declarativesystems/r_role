@@ -1,0 +1,12 @@
+---
+fixtures:
+  forge_modules:
+    stdlib:
+      repo: puppetlabs-stdlib
+      ref: ">= 4.0.0 <= 99.0.0"
+    r_profile:
+      repo: geoffwilliams-r_profile
+      ref: 1.1.0
+    includable:
+      repo: geoffwilliams-includable
+      ref: 0.1.0

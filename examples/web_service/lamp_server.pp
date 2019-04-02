@@ -1,5 +1,5 @@
 class { 'r_profile::web_service::apache': }
-$db = { 
+$db = {
   'quote' => {
     user     => 'quote',
     password => 'quote',
@@ -8,7 +8,7 @@ $db = {
   }
 }
 
-class { 'r_profile::database::mysql_server': 
+class { 'r_profile::database::mysql_server':
   db => $db,
 }
 class { 'r_profile::webapp::git_site':
